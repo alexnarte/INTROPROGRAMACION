@@ -1,0 +1,22 @@
+//Area del triangulo en funcion de sus lados
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+int main() 
+{
+	float a,area,b,c,p;
+	cout << " Ingrese lado a: " << endl;
+	cin >> a;
+	cout << " Ingrese lado b: " << endl;
+	cin >> b;
+	cout << " Ingrese lado c: " << endl;
+	cin >> c;
+	p = (a+b+c)/2;
+	area = sqrtf(p*(p-a)*(p-b)*(p-c));
+	cout << " El area es: " << area << endl;
+	return 0;
+}
