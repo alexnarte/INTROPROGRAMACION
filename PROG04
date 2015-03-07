@@ -3,6 +3,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <cmath>
+#include "conio.h"
 using namespace std;
 
 
@@ -18,5 +19,6 @@ int main()
 	p = (a+b+c)/2;
 	area = sqrtf(p*(p-a)*(p-b)*(p-c));
 	cout << " El area es: " << area << endl;
+	getch();
 	return 0;
 }
