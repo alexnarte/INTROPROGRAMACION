@@ -13,8 +13,8 @@ void main()
 	cout<<"Ingrese el numero: ";
 	cin>>a;
 	if(a>0)
-	cout<<"El numero es postivo ";
+	   cout<<"El numero es postivo ";
 	else
-	cout<<"El numero es negativo ";
+	   cout<<"El numero es negativo ";
 	getch();
 }
