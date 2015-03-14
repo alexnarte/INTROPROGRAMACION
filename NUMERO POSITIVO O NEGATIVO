@@ -1,0 +1,20 @@
+// DETERMINAR SI UN NUMERO ES POSITIVO O NEGATIVO.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void main()
+{
+	int a;
+	cout<<"Ingrese el numero: ";
+	cin>>a;
+	if(a>0)
+	cout<<"El numero es postivo ";
+	else
+	cout<<"El numero es negativo ";
+	getch();
+}
