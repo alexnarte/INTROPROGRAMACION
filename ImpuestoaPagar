@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	float s,sm,i,ip;
+	cout<<"Ingrese el salario: ";
+	cin>>s;
+	cout<<"Ingrese el salario minimo: ";
+	cin>>sm;
+	cout<<"Ingrese el (%): ";
+	cin>>i;
+	if(s>=2*sm)
+		ip=s*(i/100);
+	else
+		ip=0;
+	cout<<"El impuesto a pagar es= "<<ip;
+	
+    getch();
+}
