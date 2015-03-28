@@ -1,0 +1,48 @@
+// prog01.cpp : Defines the entry point for the console application.
+// Autor:Jhon Alexi Narvaez Tejerina
+// Objetivo:Calcular la formula cuadratica
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+using namespace std;
+
+int main ()
+{ 
+   float a,b,c,D,x,x1,x2,xr,xi;
+   cout<<"Ingrese a:";
+   cin>>a;
+   cout<<"Ingrese b:";
+   cin>>b;
+   cout<<"Ingrese c:";
+   cin>>c;
+   D=b*b-(4*a*c);
+   if (D>0)
+   {
+      x1=-b+sqrt(D)/(2*a);
+      x2=-b-sqrt(D)/(2*a);
+      cout<<"Hay dos soluciones reales";
+	  cout<<"X1 es= "<<x1;
+	  cout<<"X2 es= "<<x2;
+   }
+   else
+   {   
+	  if (D==0)
+      {
+         x=-b/(2*a);
+         cout<<"Hay una solucion= "<<x;
+      }
+      else 
+	  {
+         cout<<"Es real";
+		 xr=-b/(2*a);
+         xi=sqrt(-D)/(2*a);
+         cout << "Soluciones Imaginarias"<<endl;
+         cout << "X1= "<<xr<<" + "<< xi << "es imaginario"<<endl;
+         cout << "X2= "<<xr<<" - "<< xi << "es imaginario"<<endl;
+	  }
+    }
+getch();
+return 0;
+}
