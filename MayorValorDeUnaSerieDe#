@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+int main(void)
+{
+	int n,v,mayor,i;
+	cout<<"Ingrese el numero de digitos:";
+	cin>>n;
+	mayor=0;
+	for(i=1;i<=n;i++)
+	{
+		cout<<"Ingrese un valor:";
+		cin>>v;
+		if(v>mayor)
+		
+			mayor=v;
+		
+	}
+	cout<<"El mayor valor es="<<mayor;
+	cout<<"\n";
+	getch();
+	return 0;
+}
