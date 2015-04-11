@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+int main(void)
+{
+	int n;
+	cout<<"Verificar el opuesto de un numero en un dado";
+	cout<<"\nIntroduzca el numero:";
+	cin>>n;
+	switch(n)
+	{
+	    case 1:cout<<"En la cara opuesta esta el seis\n";
+		break;
+		case 2:cout<<"En la cara opuesta esta el cinco\n";
+		break;
+		case 3:cout<<"En la cara opuesta esta el cuatro\n";
+		break;
+		case 4:cout<<"En la cara opuesta esta el tres\n";
+		break;
+		case 5:cout<<"En la cara opuesta esta el dos\n";
+		break;
+		case 6:cout<<"En la cara opuesta esta el uno\n";
+		break;
+		default:cout<<"Error!\n";
+	}
+	return 0;
+}
