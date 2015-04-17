@@ -1,0 +1,68 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void main()
+{
+    float a,b,h,r,np,p1,p2,p3,ef,pp,ppr,pf,nf,n; int op;
+    do
+    {
+	    cout<<"\n\n\t MENU";
+        cout<<"\n\t ====";
+        cout<<"\n1.-Area del triangulo";
+		cout<<"\n2.-Area del circulo";
+		cout<<"\n3.-Nota final de una materia";
+		cout<<"\n4.-Numero positivo o negativo";
+		cout<<"\n5.-Salir";
+		cout<<"\nElige una opcion:";
+	    cin>>op;
+		switch(op)
+		{
+		    case 1:cout<<"Ingrese la base y la altura:";
+			       cin>>b;cin>>h;
+			       a=(b*h)/2;
+			       cout<<"El area del triangulo es="<<a;
+			       break;
+		    case 2:cout<<"Ingrese el radio:";
+			       cin>>r;
+			       a=3.1416*r*r;
+			       cout<<"El area del circulo es="<<a;
+			       break;
+		    case 3:cout<<"Ingrese la nota practica:";
+			       cin>>np;
+			       cout<<"Ingrese los parciales 1,2,3:";
+			       cin>>p1;cin>>p2;cin>>p3;
+			       cout<<"Ingrese el examen final:";
+			       cin>>ef;
+			       pp=np*0.2;
+			       ppr=((p1+p2+p3)/3)*0.4;
+			       pf=ef*0.4;
+			       nf=pp+ppr+pf;
+			       cout<<"La nota final es="<<nf;
+			       break;
+		    case 4:cout<<"Ingrese un valor:";
+			       cin>>n;
+			       if(n==0)
+			       {
+					   cout<<"El numero es cero";
+				   }
+			       else
+			       {
+					   if(n>0)
+			           {
+						   cout<<"El numero es positivo";
+					   }
+			           else
+			           {
+						   cout<<"El numero es negativo";
+					   }
+				   }
+			       break;
+		     default:cout<<"Opcion invalida!!!";
+		}
+	}
+	while(op!=5);
+	getch();
+}
