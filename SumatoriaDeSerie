@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	int i,n; float p,x,s;
+	cout<<"Ingrese el limite n: ";
+	cin>>n;
+	cout<<"Ingrese el valor x: ";
+	cin>>x;
+	s=0;
+	p=x;
+	for(i=1;i<=n;i++)
+	{
+		if(i%2==0)
+		{
+			s=s-p;
+			p=p*x;
+		}
+		else
+		{
+			s=s+p;
+			p=p*x;
+		}
+	}
+	cout<<"La sumatoria es="<<s;
+	getch();
+}
