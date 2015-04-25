@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	int a,b;
+	cout<<"Definir si el menor valor es divisor del mayor";
+	cout<<"\nIngrese el valor a y b: ";
+	cin>>a;cin>>b;
+	if(a>b)
+	{
+		if(a%b==0)
+		{
+			cout<<"El menor es divisor del mayor";
+		}
+		else
+		{
+			cout<<"El menor no es divisor del mayor";
+		}
+	}
+	else
+	{
+		if(b%a==0)
+		{
+			cout<<"El menor es divisor del mayor";
+		}
+		else
+		{
+			cout<<"El menor no es divisor del mayor";
+		}
+	}
+	getch();
+}
