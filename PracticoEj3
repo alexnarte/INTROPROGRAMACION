@@ -1,0 +1,49 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float SERIE(float x,int n);
+float POTENCIA(float b,int e);
+int FACTORIAL(int n);
+
+int main()
+{
+	int n; 
+	float x,s;
+	cout<<"Ingrese N: ";
+	cin>>n;
+	cout<<"Ingrese X: ";
+	cin>>x;
+	s=SERIE(x,n);
+	cout<<"La suma es= "<<s;
+	getch();
+	return 0;
+}
+float SERIE(float x,int n)
+{
+	float s=0;
+	int i,signo=1;
+	for(i=1;i<=n;i=i+2)
+	{
+		s=s+signo*(POTENCIA(x,i)/FACTORIAL(i));
+	    signo=-signo;
+	}
+	return s;
+}
+float POTENCIA(float b,int e)
+{
+	float a=1;
+	int i;
+	for(i=1;i<=e;i++)
+		a=a*b;
+	return a;
+}
+int FACTORIAL(int n)
+{
+	int i,a=1;
+	for(i=1;i<=n;i++)
+	   a=a*i;
+	return a;
+}
